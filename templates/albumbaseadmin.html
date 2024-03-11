@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>網路相簿</title>
+	{% load static %}
+	<link href="{% static "css/albumstyle.css" %}" rel="stylesheet" type="text/css" />
+	{% block script %}{% endblock %}
+</head>
+<body background="{% static "assets/img/bg3-2.jpg" %}">
+	<table width="778" border="0" align="center" cellpadding="0.5" cellspacing="0">
+	  <tr>
+	  <td>
+        <div class="titleDiv">
+		<img src="{% static "assets/img/logo-仿再生紙logo.png" %}"width="100" height="100" alt="Logo"/>Belle Baii Scented Candles
+        </div>
+		  <div class="menulink">
+			<a href="/albumadminmain/">管理首頁</a>
+			<a href="/albumlogout/">登出 </a>
+			<a href="/adminmain/">商品管理頁面</a>
+		  </div>
+		</td>
+	  </tr>
+	  <tr>
+		<td >
+		  <div id="mainRegion">
+			  <table width="90%" border="1" background="{% static "assets/img/bg2.png" %}" align="center" cellpadding="4" cellspacing="0">
+				<tr>
+				  <td>
+					{% block content %}{% endblock %}
+				  </td>
+				</tr>
+			  </table>
+		  </div>
+		</td>
+	  </tr>
+	  <tr>
+		<td align="center"  class="trademark">網站相簿&nbsp;&copy; &nbsp; All Rights Reserved. </td>
+	  </tr>
+	  <tr>
+
+	  </tr>
+	</table>
+</body>
+</html>

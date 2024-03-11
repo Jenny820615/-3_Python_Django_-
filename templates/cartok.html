@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <div id="maindiv">
+    <p class="title">訂購完成</p>
+    <p class="subject">謝謝您的訂購！</p>
+    <p class="desc">顧客<strong>{{customname1}}</strong> (先生 / 小姐)您好，您已經成功的完成訂購程序，我們將儘快將選購的商品寄送給您！再次感謝您的支持！<br />
+    <a href="/cartordercheck/?orderid={{orderid}}&customemail={{mailto}}">&lt;詳細內容請按此&gt;</a></p>
+  </div>
+{% endblock %}

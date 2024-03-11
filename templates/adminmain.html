@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>商品後台編輯列表</title>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/adminstyle.css' %}">
+</head>
+
+<body>
+  <h1>顯示所有商品資料</h1>
+<div class="table-container">
+  <table border="1" cellpadding="0" cellspacing="0">
+    <th>產品編號</th>
+    <th>產品名稱</th>
+    <th>產品描述</th>
+    <th>產品價格</th>
+  	<th>促銷種類</th>
+	  <th>產品照片</th>
+    <th>商品庫存量</th>
+    <th>修改/刪除</th>
+	{% for product in products %}
+			<tr class="alt">
+			<td>{{ product.product_id }}</td>
+			  <td>{{ product.product_name }}</td>
+			  <td>{{ product.product_description }}</td>
+			  <td>{{ product.product_price }}</td>
+			  <td>{{ product.product_sale }}</td>
+			  <td><img src="{% static product.product_image_link %}" alt="Product Image" width="100" height="100"></td>
+        <td>{{ product.product_storage }}</td>
+      <td>
+				<a href="/product_edit/{{product.product_id}}/" title="編輯"> <img src="{% static "assets/images/note_edit.png" %}"  width="25" height="25" /></a>
+				<a href="/product_delete/{{product.product_id}}/" title="刪除"><img src="{% static "assets/images/cross.png" %}" width="25" height="25" /></a>
+			</td>
+			</tr>
+		{% empty %}
+			<div class="status warning">
+				<p><img src="{% static "assets/images/icon_warning.png" %}" alt="Warning" /><span>注意</span>目前商品列表沒有任何資料！</p>
+			</div>
+		{% endfor %}
+  </table>
+</div>
+		<div class="topfunction">
+		{% if currentpage > 1 %}
+			<a href="/adminmain/1/" title="上一頁">
+			<img src="{% static "assets/images/prevpage.png" %}"width="30" height="30" alt="上一頁"/></a>
+		{% endif %}
+		{% if currentpage < totpage %}
+			<a href="/adminmain/2/" title="下一頁">
+			<img src="{% static "assets/images/nextpage.png" %}"width="30" height="30" alt="下一頁"/></a>
+		{% endif %}
+      <a href="/product_add/" title="新增">
+      <img src="{% static "assets/images/add_button.png" %}"width="30" height="30" alt="新增"/></a>
+	  <a href="/product/" title="登出管理系統，返回商品頁">
+	  <img src="{% static "assets/images/logout.png" %}" alt="返回商品頁" width="30" height="30" /></a>
+	  <a href="/logout/" title="返回首頁">
+      <img src="{% static "assets/images/product.png" %}"width="30" height="30" alt="返回首頁"/></a>
+	  <a href="/albumindex/" title="相簿">
+      <img src="{% static "assets/images/album.png" %}"width="30" height="30" alt="相簿"/></a>
+		 </div>
+  </table>
+</div>
+
+</body>
+</html>

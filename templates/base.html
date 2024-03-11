@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belle Baii 購物車</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block script %}{% endblock %}
+</head>
+
+<body>
+    <div id="warp">
+      <div id="content">
+        <img class="logo" data-origin="left" data-distance="20%" src="{% static 'assets/img/logo-BELLE brand-TOP.png' %}" style="width: 160px;" />
+        <div id="sidediv">
+          <div class="sidemenu">資訊中心</div>
+          <ul>
+            <li><a href="/cart/">檢視購物車</a></li>
+            <li><a href="/cartordercheck/">查詢訂單</a></li>
+            <li><a href="/product/">回到商品頁</a></li>
+          </ul>
+        </div>
+        {% block content %}{% endblock %}
+        <div style="clear:both"></div>
+      </div>
+    </div>
+</body>
+</html>
