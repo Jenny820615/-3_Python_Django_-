@@ -1,0 +1,275 @@
+html, body {
+	font-family:"黑体", SimHei, sans-serif;
+	font-size:15px;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: "黑体", SimHei, sans-serif;
+	font-size: 15px;
+	margin: 10px;
+	padding: 10px;
+	background:url(../assets/img/bg3-2.jpg);
+	}
+
+p {
+	padding: 0;
+	font-size: 11pt;
+	line-height: 150%;
+	font-family:"黑体", SimHei, sans-serif;
+}
+ul, li {
+	list-style: none;
+	font-family: "黑体", SimHei, sans-serif;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+img {border: none;}
+h1, h3, h4, h5 {
+	font-family: "黑体", SimHei, sans-serif;
+	font-size: 25px;
+	padding: 10px;
+	margin: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0;
+}
+th,td {padding: 8px;}
+th {
+	text-shadow: 1px 1px 1px #fff;
+	font-size: 18px;
+	background-color: #d6ccc2;
+  background-repeat: repeat-x;
+  background-position: top;
+  color: #403d39;
+}
+td {
+	overflow: auto;
+    border: 1px solid ;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #f5ebe0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+}
+
+table tr td a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #06F;
+}
+
+table tr td a:hover { color:#F60;}
+
+#warp {
+	height: 100%;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	width: 720px;
+}
+
+#header {
+	width: 100%;
+	height: 50px;
+}
+
+#footer {
+	font-size: 12px;
+	padding: 15px 10px;
+	clear: both;
+	background: url(images/bg_footer.png);
+	margin-bottom: 20px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	text-shadow: 1px 1px 1px #CCC;
+	text-align: center;
+}
+
+.topfunction {
+	height: 30px;
+	margin-top: 12px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.topfunction img {
+	margin-right: 10px;
+}
+
+.toplogin {
+	height: 30px;
+	float: right;
+	margin-top: 12px;
+	margin-right: 5px;
+	text-align: right;
+}
+
+.toplogin img {
+	margin-right: 10px;
+}
+
+.logo {
+	float: left;
+	padding: 0px 0 0 20px;
+}
+
+.headings {
+	padding: 0 20px;
+	border: 1px solid #CACACA;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-topleft: 10px;
+	height: 35px;
+	background-color: #d6ccc2;
+	background-repeat: repeat-x;
+	background-position: top;
+	color: #403d39;
+}
+
+.headings h2 {
+	padding-top: 5px;
+	font-size: 20px;
+	margin: 0; /* 移除上下間距 */
+}
+
+.contentbox {
+	overflow: auto;
+	border: 1px solid #fff;
+	padding: 15px;
+	margin-bottom: 20px; /* 增加下面間距 */
+	background:#f5ebe0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+}
+
+.typeblock {
+	color: #FFF;
+	background-color: #F36;
+	padding: 2px 5px;
+	text-align: center;
+	text-shadow: 1px 1px #333;
+	border-radius: 5px;
+}
+
+.extrabottom {
+	padding: 15px;
+	background: url(images/bg_fade_sml.png)
+	background-repeat:repeat-x top;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin-top: 10px;
+}
+
+.status {
+	padding: 8px 10px 5px 10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	text-shadow: 1px 1px 1px #fff;
+	overflow: auto;
+	clear: both;
+	width: 90%;
+	margin: 5px auto 10px auto;
+}
+.status img {float: left; padding-right: 5px;}
+.status p {padding: 0; margin: 0;}
+.status p span {font-weight: 700;}
+
+.warning {
+	border: 3px solid #BF9900;
+	background: #FEEB9C url(images/bg_fade_yellow_med.png)
+	background-repeat:repeat-x top;
+}
+.warning span {color: #BF9900;}
+
+.newsinfo {
+	color: #333;
+	background-color: #EEE;
+	padding: 5px 10px;
+	margin: 0px 10px;
+	display: block;
+	text-align: center;
+}
+
+.newsinfo *{
+	vertical-align: text-bottom;
+}
+
+.boxLogin {
+	width: 700px;
+	margin: 20px; 
+	padding: 20px;
+	/*background-image: url(images/adminlogin_bg.png);*/
+}
+
+.boxLogin  div.fields {
+	width: 330px;
+	height: 180px;
+	overflow: hidden;
+	background-color: #f5ebe0;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px 3px #615d5d;
+	margin:20px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 40px;
+	padding-left: 50px;
+}
+
+.boxLogin  .toolTip{
+	width:416px;
+	float:right;
+}
+
+.boxLogin  .fields p.error {
+	background:transparent;
+}
+.boxLogin div.fields.loginsystem{
+	vertical-align: middle; /* 垂直置中 */
+}
+	
+.fields p.rem {
+	padding:10px 0 0 100px;
+}
+
+.fields p label { display:inline-block;}
+
+.action {
+	padding:10px 30px 0 0;
+	text-align:center;
+}
+
+.small {
+	width: 84px;
+	font-size: 13px;
+	text-shadow: 1px 1px 0px #CCC;
+	font-family: "黑体", SimHei, sans-serif;
+}
+
+.sep { margin-top:15px; }
+
+.table-container {
+    font-family: "黑体", SimHei, sans-serif; /* 修改字體 */
+    margin: 20px; /* 修改表格上下左右間距 */
+    padding: 10px; /* 修改表格内部間距 */
+}
+
+table td {
+  text-align: center; /* 水平置中 */
+  vertical-align: middle; /* 垂直置中 */
+}
